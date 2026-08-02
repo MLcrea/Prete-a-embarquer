@@ -57,28 +57,15 @@ if (canvas && isFinePointer && !prefersReducedMotion) {
   draw();
 }
 
-// ---------- CTA final ----------
-const ctaBtn = document.getElementById('ctaBtn');
-const ctaReveal = document.getElementById('ctaReveal');
-if (ctaBtn && ctaReveal) {
-  ctaBtn.addEventListener('click', () => {
-    const isEnglish = document.documentElement.lang === 'en';
-    ctaReveal.textContent = isEnglish ? 'Ready to take off with AFS!' : 'Prête à décoller avec AFS !';
-    ctaReveal.classList.add('is-shown');
-  });
-}
-
 // ---------- Journal de bord ----------
 const logbookBtn = document.getElementById('logbookBtn');
-const logbookReveal = document.getElementById('logbookReveal');
 
 const triggerLogbook = () => {
-  logbookReveal.textContent = 'Prête à embarquer avec AFS !';
-  logbookReveal.classList.add('is-shown');
+  logbookBtn.classList.add('is-revealed');
   logbookBtn.setAttribute('aria-pressed', 'true');
 };
 
-if (logbookBtn && logbookReveal) {
+if (logbookBtn) {
   logbookBtn.addEventListener('click', triggerLogbook);
   logbookBtn.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); triggerLogbook(); }
