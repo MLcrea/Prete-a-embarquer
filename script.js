@@ -1,5 +1,4 @@
 // ---------- Scroll progress : jauge + badge ----------
-const badgePercent = document.getElementById('badgePercent');
 
 const setScrollProgress = () => {
   const doc = document.documentElement;
@@ -7,8 +6,7 @@ const setScrollProgress = () => {
   const scrollHeight = (doc.scrollHeight || document.body.scrollHeight) - doc.clientHeight;
   const progress = scrollHeight > 0 ? scrollTop / scrollHeight : 0;
   document.documentElement.style.setProperty('--scroll', progress.toFixed(4));
-  if (badgePercent) badgePercent.textContent = Math.round(progress * 100);
-};
+ };
 
 let ticking = false;
 window.addEventListener('scroll', () => {
@@ -70,11 +68,19 @@ if (ctaBtn && ctaReveal) {
   });
 }
 
-// ---------- Révéler le téléphone en footer ----------
-const revealPhoneBtn = document.getElementById('revealPhoneBtn');
-const phoneDisplay = document.getElementById('phoneDisplay');
-if (revealPhoneBtn && phoneDisplay) {
-  revealPhoneBtn.addEventListener('click', () => {
-    phoneDisplay.textContent = '06 62 25 62 34';
+// ---------- Journal de bord ----------
+const logbookBtn = document.getElementById('logbookBtn');
+const logbookReveal = document.getElementById('logbookReveal');
+
+const triggerLogbook = () => {
+  logbookReveal.textContent = 'Prête à embarquer avec AFS !';
+  logbookReveal.classList.add('is-shown');
+  logbookBtn.setAttribute('aria-pressed', 'true');
+};
+
+if (logbookBtn && logbookReveal) {
+  logbookBtn.addEventListener('click', triggerLogbook);
+  logbookBtn.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); triggerLogbook(); }
   });
 }
