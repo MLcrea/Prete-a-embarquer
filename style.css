@@ -231,11 +231,12 @@ a { color: inherit; }
 .review__author { font-family: var(--font-mono); font-size: 0.75rem; color: var(--blue-deep); font-weight: 700; }
 .review__author span { color: var(--taupe-mid); font-weight: 400; }
 
-/* ---------- Fabrication ---------- */
-.fabrication { display: block; }
-
-/* ---------- CTA final ---------- */
-.footer { text-align: center; padding: 4rem 1.5rem 5rem; }
+#fabrication {
+  padding-bottom: 2.5rem;
+}
+.footer {
+  padding-top: 1.5rem;
+}
 
 .logbook {
   display: inline-block;
