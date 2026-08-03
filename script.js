@@ -31,7 +31,7 @@ const orderBtn = document.getElementById('orderBtn');
 const orderBtnText = document.getElementById('orderBtnText');
 
 const triggerOrder = () => {
-  orderBtnText.innerHTML = '<a>Passez commande au 06 62 25 62 34 !</a>';
+orderBtnText.innerHTML = '<a>Passez commande<br>au 06 62 25 62 34 !</a>';>';
   orderBtn.setAttribute('aria-pressed', 'true');
 };
 
