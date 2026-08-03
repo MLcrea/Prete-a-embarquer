@@ -30,7 +30,7 @@ const orderBtnText = document.getElementById('orderBtnText');
 const triggerOrder = () => {
   const isEnglish = document.documentElement.lang === 'en';
   orderBtnText.innerHTML = isEnglish
-    ? '<a>Give me a call<br>at 06 62 25 62 34!</a>'
+    ? '<a>Place your order<br>now : 06 62 25 62 34!</a>'
     : '<a>Passez commande<br>au 06 62 25 62 34 !</a>';
   orderBtn.setAttribute('aria-pressed', 'true');
 };
