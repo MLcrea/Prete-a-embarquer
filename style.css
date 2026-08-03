@@ -70,7 +70,7 @@ a { color: inherit; }
   transition: background 0.3s ease, color 0.3s ease;
 }
 .lang-toggle:hover { background: var(--blue-deep); color: var(--sand); }
-.lang-toggle { animation: pulse-glow 4s ease-in-out 1; animation-delay: 1.5s; }
+.lang-toggle { animation: pulse-glow 3s ease-in-out infinite; }
 
 /* ---------- Hero ---------- */
 .hero {
@@ -355,6 +355,8 @@ a { color: inherit; }
   border-radius: 999px;
   animation: pulse-glow 3s ease-in-out infinite;
   transition: background 0.3s ease, color 0.3s ease;
+    text-align: center;
+  justify-content: center;
 }
 .order-btn:hover { background: var(--sand); color: var(--ink); border-color: var(--ink); }
 .order-btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
