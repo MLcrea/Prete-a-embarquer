@@ -7,7 +7,7 @@
 <meta name="description" content="A new profile is about to join the AFS team.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=Oswald:wght@700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -20,25 +20,39 @@
 <a class="lang-toggle" href="../index.html">FR</a>
 
 <header class="hero">
-  <canvas id="wake" aria-hidden="true"></canvas>
-  <div class="hero__inner">
-  <p class="hero__logo">AFS</p>
-<p class="hero__tagline">The foiling spirit since 2009</p>
-<p class="hero__eyebrow">2026 update</p>
-<h1 class="hero__title">A recruit ready to <br>join the AFS adventure!</h1>
-<p class="hero__poetic">
-  <span class="hero__poetic-line">Some new arrivals come in a box.</span><br>
-  <span class="hero__poetic-line">Others start with a meeting.</span><br>
-  <span class="hero__poetic-highlight">What if the next adventure started together?</span>
-</p>
-  <a href="#matieres" class="hero__scroll">
-    <span>Discover</span>
-    <svg width="14" height="20" viewBox="0 0 14 20" fill="none">
-      <path d="M7 1V19M7 19L1 13M7 19L13 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </a>
+<div class="hero__inner">
+  <div class="hero__brand">
+    <p class="hero__logo">AFS</p>
+    <p class="hero__tagline">The foiling spirit since 2009</p>
+  </div>
+  <p class="hero__eyebrow">2026 update</p>
+  <h1 class="hero__title">A recruit ready to <br>join the AFS adventure</h1>
+  <p class="hero__statement">Some new arrivals come in a box. <br>
+Others start with a meeting.
+<br><strong>What if the next one started together?</strong></p>
+  <a href="#matieres" class="hero__cta">Discover →</a>
 </div>
+<p class="hero__ghost" aria-hidden="true">AFS</p>
 </header>
+
+<div class="stats-bar">
+  <div class="stats-bar__item">
+    <p class="stats-bar__num">13</p>
+    <p class="stats-bar__label">Years of experience</p>
+  </div>
+  <div class="stats-bar__item">
+    <p class="stats-bar__num">2</p>
+    <p class="stats-bar__label">Skillsets in one</p>
+  </div>
+  <div class="stats-bar__item">
+    <p class="stats-bar__num">C1</p>
+    <p class="stats-bar__label">Fluent English</p>
+  </div>
+  <div class="stats-bar__item">
+    <p class="stats-bar__num">100%</p>
+    <p class="stats-bar__label">Mobile</p>
+  </div>
+</div>
 
 <div class="ticker" aria-hidden="true">
  <div class="ticker__track">
@@ -62,111 +76,108 @@
 <main>
 
   <!-- SECTION 01 — RAW MATERIALS -->
-  <section id="matieres" class="section">
+  <section id="matieres" class="section" data-num="01">
     <div class="block" data-reveal>
       <p class="section__num">01 — Raw materials</p>
-      <p class="block__text">Every company has its own culture, habits, strengths and history. When I join a new environment, my first step is always the same: <strong>understand before acting.</strong></p>
-      <p class="block__text">Meet the teams, listen to their needs, get to know the partners, and become familiar with the products and the audiences they serve.</p>
-      <p class="block__text">This immersion phase is essential. It's what then allows me to take ownership of projects quickly, spot opportunities and bring tailored solutions rather than off-the-shelf answers.</p>
+      <p class="block__text"><strong>Every company has its own language. A culture, habits, know-how, and people who bring a project to life every day.</strong></p>
+      <p class="block__text">When I join a new environment, I always start with the same thing: <strong>understand before acting.</strong> Meeting the teams, listening to the people who know the ground, talking with partners, discovering the products, understanding the audiences they speak to... I like taking the time to soak up a world before trying to tell its story.</p>
+      <p class="block__text">This immersion phase is, to me, essential. It's what then allows me to move efficiently, spot the right opportunities and offer solutions built for the context, rather than off-the-shelf answers.</p>
       <p class="block__text">This approach is what allowed me to build events and communications departments from scratch, as well as support already established organisations in their growth.</p>
-      <p class="block__text"><strong>Building on what exists, bringing a fresh perspective and quickly becoming a reliable point of contact for teams: that's how I like to work.</strong></p>
+      <p class="block__text"><strong>Building on what exists, bringing a fresh perspective and quickly becoming a reliable point of contact for teams: that's how I like to practise this job.</strong></p>
     </div>
   </section>
 
   <!-- SECTION 02 — ASSEMBLY -->
-  <section id="assemblage" class="section section--alt">
+  <section id="assemblage" class="section section--alt" data-num="02">
     <p class="section__num section__num--center">02 — Assembly</p>
-    <div class="assemble">
-     <div class="assemble__item" data-reveal>
-  <h3 class="assemble__title">Events</h3>
-  <p><strong>A successful event starts long before its doors open.</strong></p>
-  <p>It takes the right format, a realistic schedule, coordinated suppliers, tracked budgets, anticipated hiccups, and an overview kept right down to the last detail.</p>
-  <p>Over the years, I've organised professional events, partner meetups, institutional milestones, open days and gatherings designed to bring people together. Very different projects, but with one thing in common:<strong> creating moments that bring people together and leave participants with a real brand experience.</strong></p>
+  <div class="assemble">
+  <div class="stepcard" data-reveal>
+    <svg class="stepcard__icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="1" stroke="currentColor" stroke-width="1.3"/><path d="M3 9h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+    <h3 class="stepcard__title">Events</h3>
+    <p><strong>A successful event starts well before its doors open.</strong></p>
+    <p>It's born upstream: imagining the right format, building a realistic schedule, coordinating teams, and staying alert, right up to the last moment, to head off any hiccup.</p>
+    <p>Over the years, I've imagined and run professional events, partner meetups, and gatherings designed to bring people together.
+      <p>Very different projects, but always guided by the same drive: <strong>creating moments that bring people together, bring a brand to life, and leave participants with the memory of a great experience.</strong></p>
+  </div>
+  <div class="stepcard" data-reveal>
+    <svg class="stepcard__icon" viewBox="0 0 24 24" fill="none"><path d="M4 4h16v12H8l-4 4V4Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+    <h3 class="stepcard__title">Communication</h3>
+    <p><strong>Relevant communication starts with a solid understanding of the ground.</strong></p>
+    <p>Before telling a story, I like to listen to the teams, observe how things are actually used, and find the thread that will give meaning to the whole. Only then come the words and the materials.</p>
+    <p>Social media, newsletters, websites, press relations, internal communication or editorial content: each channel speaks its own language, but they all need to tell the same story, consistently.<strong> It's this search for balance between strategy, listening and storytelling that guides the way I communicate.</strong></p>
+  </div>
+  <div class="stepcard" data-reveal>
+    <svg class="stepcard__icon" viewBox="0 0 24 24" fill="none"><circle cx="7" cy="7" r="3" stroke="currentColor" stroke-width="1.3"/><circle cx="17" cy="17" r="3" stroke="currentColor" stroke-width="1.3"/><path d="M9.5 9.5l5 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+    <h3 class="stepcard__title">Partner relations</h3>
+    <p><strong>Behind every project, there are human relationships first.</strong></p>
+    <p>Building and nurturing a network of partners, supporting collaborations, or coordinating public statements are all part of my everyday work.</p>
+    <p>Through my experience, I've learned that a lasting partnership doesn't rest on shared interests alone, but on the quality of exchanges, availability, listening, and the ability to build together. It's this attention to people that, in my view, makes it possible to <strong>create solid collaborations and make people want to commit to a shared project.</strong></p>
+  </div>
 </div>
-<div class="assemble__item" data-reveal>
-  <h3 class="assemble__title">Communication</h3>
-  <p><strong>Useful communication starts with a solid understanding of the ground.</strong></p>
-  <p>It's not just about posting regularly, but about knowing what's worth telling, finding the right angle, adapting the message to the right audience, and creating consistency across every channel.</p>
-  <p>Social media, newsletters, websites, press relations, internal communication or editorial content: <strong>each tool speaks its own language, but they all need to tell the same story.</strong></p>
-</div>
-<div class="assemble__item" data-reveal>
-  <h3 class="assemble__title">Partner relations</h3>
-  <p><strong>Behind every project, there's a human relationship first.</strong></p>
-  <p>Building and maintaining lasting relationships with partners, supporting collaborations, coordinating public statements or representing an organisation at events are all part of my everyday work.</p>
-  <p><strong>I've learned that a network isn't built with contacts alone, but with trust, availability and genuine attention to human relationships.</strong></p>
-</div>
-    </div>
   </section>
 
   <!-- SECTION 03 — FIELD TESTS -->
-  <section id="tests" class="section">
-    <p class="section__num section__num--center">03 — Field tests</p>
+  <section id="tests" class="section" data-num="03">
+    <p class="section__num section__num--center">03 — Field applications</p>
     <div class="testgrid">
   <article class="testcard" data-reveal>
-    <p class="testcard__company">Fédération du BTP du Finistère <span class="testcard__role">· Communications &amp; Events Manager</span></p>
-<h3 class="testcard__mission">Structuring and bringing to life an events and communications strategy in service of a professional network</h3>
+    <p class="testcard__tag">Fédération du BTP du Finistère</p>
+<h3 class="testcard__mission">Structuring events and communication for a professional federation</h3>
     <ul>
-      <li><strong>Full management of institutional events:</strong> designing formats, coordinating suppliers, handling logistics and budgets, creating materials, analysing outcomes and supporting key member events</li>
-      <li><strong>Co-running the partner network, developing press relations and representing</strong> the Federation among local economic and institutional stakeholders</li>
-      <li><strong>Building and structuring a communications department:</strong> editorial strategy, community management, newsletter overhaul and development of communication tools</li>
+      <li>When I arrived, everything was still to be built. <br>I created the communications and events department, designing a strategy able to support both the teams and the members. I designed institutional events from A to Z, developed communication, ran partner and press relations, and helped raise the organisation's profile among local economic stakeholders. <br><strong>A deeply cross-functional role, where strategy, fieldwork and coordination always move forward together.</strong></li>
     </ul>
    <p class="testcard__result"><strong>Result:</strong> a fully structured communications and events function, events that became genuine highlights for the network, and digital engagement more than doubled in six months</p>
   </article>
 
   <article class="testcard" data-reveal>
-  <p class="testcard__company">Délices du Kae <span class="testcard__role">· Communications &amp; Events Manager</span></p>
-<h3 class="testcard__mission">Bringing a brand to life on the ground and online</h3>
+  <p class="testcard__tag">Délices du Kae</p>
+<h3 class="testcard__mission">Bringing a brand to life, <br>on the ground and online</h3>
     <ul>
-      <li><strong>Designing and coordinating promotional activities, events and workshops:</strong> creating formats, handling logistics, coordinating suppliers and promoting the brand among partners, teams and customers</li>
-      <li><strong>Rolling out a communications strategy for a network of four locations:</strong> editorial direction, content, community management and brand consistency</li>
+      <li>Across a network of four locations, I helped build a shared communications approach while designing events and activities able to bring the brand to life for customers, partners and teams. <br>Between editorial strategy, brand identity, creating standout moments and operational coordination, <strong>I managed to make digital channels and on-the-ground experiences work together to tell a consistent story, whatever the touchpoint.</strong></li>
     </ul>
     <p class="testcard__result"><strong>Result:</strong> events that became genuine local visibility drivers, a harmonised identity across all locations, and communities with lasting stronger engagement</p>
   </article>
 
   <article class="testcard" data-reveal>
-   <p class="testcard__company">Independent activity <span class="testcard__role">· Communications &amp; Events Manager</span></p>
-<h3 class="testcard__mission">Launching and growing a brand by carrying every stage of the project</h3>
+   <p class="testcard__tag">Independent activity</p>
+<h3 class="testcard__mission">Growing a brand from A to Z</h3>
         <ul>
-      <li><strong>Designing and running events and workshops:</strong> creating formats, coordinating speakers and suppliers, handling logistics, related communication and tracking results</li>
-      <li><strong>Building the brand identity, developing visibility, and growing a loyal community</strong> through a communications strategy designed and run independently, building close relationships and providing personalised support to clients and partners</li>
-      <li><strong>Running an independent business:</strong> strategic and operational management, business development, budget tracking and support for over 250 clients a year</li>
+      <li>For six years, I ran my own entrepreneurial project. A venture that led me to shape a brand identity, organise fun and educational events, build visibility entirely organically, and support over 250 clients every year. <br>This experience taught me to steer every stage of a project, from strategic thinking to client relationships, with a full overview. <br><strong>A real school of rigour and initiative, whose lessons I still apply today.</strong></li>
     </ul>
-    <p class="testcard__result"><strong>Result:</strong> a business built and sustained for six years, visibility achieved without any advertising, and a loyal community built around a project carried from A to Z</p>
+    <p class="testcard__result"><strong>Result:</strong> a lasting business, visibility built without any advertising, and a loyal, engaged community</p>
       </article>
 
   <article class="testcard" data-reveal>
-   <p class="testcard__company">No Boxes, No Boundaries association <span class="testcard__role">· President &amp; Events Project Lead</span></p>
+   <p class="testcard__tag">No Boxes,<br> No Boundaries association</p>
 <h3 class="testcard__mission">Designing cultural events and bringing a creative community together</h3>
     <ul>
-      <li><strong>Co-founding and running an events organisation:</strong> governance, budgeting, managing volunteer teams and coordinating a network of artistic and technical partners</li>
-      <li><strong>Designing and producing concerts, live shows and exhibitions, press relations, event communication</strong> and building the association's reputation</li>
+      <li>This community project was my first major testing ground. By co-founding it, I discovered the joy of creating events able to bring together artists, partners, volunteers and audiences around a shared project. Concerts, live shows and exhibitions taught me to coordinate a wide range of people without ever losing sight of what makes people want to get involved:<strong> a shared vision and a collective adventure worth bringing to life.</strong></li>
     </ul>
-   <p class="testcard__result"><strong>Result:</strong> a founding experience that taught me to build grassroots projects, mobilise communities and bring a collective identity to life</p>
+   <p class="testcard__result"><strong>Result:</strong> several cultural events designed and produced from A to Z, and a founding experience that has stayed with me ever since</p>
   </article>
 
   <article class="testcard" data-reveal>
- <p class="testcard__company">Adyton Conseil <span class="testcard__role">· Communications Officer</span></p>
+  <p class="testcard__tag">Adyton Conseil</p>
 <h3 class="testcard__mission">Structuring communication for teams and the brand</h3>
         <ul>
-      <li><strong>Rolling out internal and external communication for a consulting firm:</strong> creating materials, developing collaborative tools and structuring public messaging</li>
-      <li><strong>Digital community management, content creation</strong> and supporting the transformation of the company's image</li>
+      <li>Adyton Conseil marked my first steps in professional communication. There, I took part in developing the firm's internal and external communication, created materials, ran the social media accounts and supported the evolution of the company's image. It's also where I understood that effective communication often starts internally: <strong>it gives teams the means to better share a common vision.</strong></li>
     </ul>
-    <p class="testcard__result"><strong>Result:</strong> the foundations of an approach I still apply today: listen, structure, and put communication to work for teams</p>
+    <p class="testcard__result"><strong>Result:</strong> a formative first experience, which taught me that communication is all the more useful when it makes teams' work easier and gives meaning to the projects they carry</p>
   </article>
 </div>
   </section>
 
   <!-- SECTION 04 — REVIEWS -->
-  <section id="avis" class="section section--alt">
+  <section id="avis" class="section section--alt" data-num="04">
     <p class="section__num section__num--center">04 — Reviews</p>
     <div class="reviews">
       <blockquote class="review" data-reveal>
-  <p class="review__text">"During our time working together, I got to see her great professional qualities firsthand: rigour, efficiency, curiosity and an excellent command of her field. She's someone who is both highly skilled and deeply invested in her projects.</p>
+  <p class="review__text">"During our time working together, I got to see her great professional qualities firsthand: rigour, efficiency, curiosity and an excellent command of her field.</p>
   <p class="review__text">Mathilde is also an excellent project and team leader, able to bring people together and move things forward with method and intelligence. I recommend her wholeheartedly for her skills, professionalism and people skills."</p>
   <footer class="review__author">Alexane C. <span><strong>· Communications Assistant</strong>, Fédération du BTP du Finistère</span></footer>
 </blockquote>
       <blockquote class="review" data-reveal>
-        <p class="review__text">"It's a real pleasure to work with Mathilde. She brings a lot to projects and teams through her skills, professionalism and people skills.</p>
+        <p class="review__text">"It's a real pleasure to work with Mathilde. <br>She brings a lot to projects and teams through her skills, professionalism and people skills.</p>
         <p class="review__text">Reliable, responsive and always available when needed, she knows how to prioritise thanks to sharp analysis and a constant drive for efficiency."</p>
         <footer class="review__author">Marie P. <span><strong>· Business Development Officer</strong>, Fédération du BTP du Finistère</span></footer>
       </blockquote>
@@ -174,49 +185,44 @@
   </section>
 
   <!-- SECTION 05 — MANUFACTURING DETAILS -->
-  <section id="fabrication" class="section">
+  <section id="fabrication" class="section" data-num="05">
     <p class="section__num section__num--center">05 — Manufacturing details</p>
-    <div class="fabrication">
-      <div class="block block--narrow" data-reveal>
-  <h3 class="block__title">Mobility</h3>
-  <p class="block__text">Events have always been the moments where my job takes on another dimension.</p>
-  <p class="block__text">They're a chance to meet teams, partners, clients and communities, and to see a brand come to life beyond a screen. A role that alternates between content creation, coordination, fieldwork, trade shows, competitions and product launches is exactly what I love most about this job.</p>
+  <div class="assemble fabrication">
+  <div class="stepcard" data-reveal>
+    <svg class="stepcard__icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.3"/><path d="M12 7l2.5 5-5 2.5L12 7Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+    <h3 class="stepcard__title">Mobility</h3>
+    <p>Events have always been the moments where my job takes on another dimension.</p>
+    <p>They're a chance to meet teams, partners, clients and communities, and to see a brand come to life beyond a screen.</p>
+      <p>It's often on the ground that the most spontaneous conversations, the sharpest ideas and the clearest understanding of a project happen.</p>
+    <p>I like alternating between time for reflection, content creation, and days spent with the people who bring a company to life.</p>
+  
+  </div>
+  <div class="stepcard" data-reveal>
+    <svg class="stepcard__icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.3"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15.5 0 18M12 3c-2.5 2.5-2.5 15.5 0 18" stroke="currentColor" stroke-width="1.3"/></svg>
+    <h3 class="stepcard__title">English</h3>
+    <p>English isn't just a professional skill, it's a language I've always loved practising.</p>
+    <p>I took a European section at middle and high school, chose the English specialism in my final year, earned a Cambridge certification during my studies, and scored 101/120 on the TOEFL.</p>
+    <p>Throughout my career, it has naturally found its place in my exchanges with international contacts and in settings where it was part of everyday life. Today, it still accompanies my reading, my films and my series.</p>
+  </div>
+  <div class="stepcard" data-reveal>
+    <svg class="stepcard__icon" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.5-7-10a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 2.2-1.2 4.1-2.5 5.6" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+    <h3 class="stepcard__title">A person before a profile</h3>
+    <p>My everyday life today is deeply tied to Finistère: its coastline, its natural spaces, and the people who bring their projects to life there.</p>
+      <p>I love botany, long walks along the coast, and bookshops where you stay longer than planned.</p>
+    <p>I have a strong appetite for projects that make sense, environments where ideas flow freely, and teams that like to build together.</p>
+    <p>I believe deeply in the value of encounters: they're often what makes you want to fully commit to a project.</p>
+  </div>
 </div>
-<div class="block block--narrow" data-reveal>
-  <h3 class="block__title">English</h3>
-  <p class="block__text">English isn't just a professional skill, it's a language I've always loved practising.</p>
-  <p class="block__text">I took a European section at middle and high school, chose an English specialism in my final year, earned a Cambridge certification during my studies, and scored 101/120 on the TOEFL.</p>
-  <p class="block__text">It felt natural, then, to keep a place for English throughout my career, working regularly with international contacts and operating in settings where English was part and parcel of everyday exchanges. Today, it still accompanies my reading as much as the films and series I watch.</p>
-  <p class="block__text">Joining a Breton company with an international reach would be a great way to keep both things I particularly love alive: a strong local footing and a language that's been with me all along.</p>
-</div>
-      <div class="block block--narrow" data-reveal>
-        <h3 class="block__title">A person before a profile</h3>
-        <p class="block__text">My everyday life today is deeply tied to Finistère: its landscapes, its coastline, its natural spaces and the people who bring their projects to life there. I love gardens, plants, long walks along the coast, and bookshops where you stay longer than planned.</p>
-        <p class="block__text">I have a strong appetite for projects that make sense, environments where ideas flow freely, and teams that like to build together. I believe deeply in the value of encounters: they're often what makes you want to fully commit to a project.</p>
-      </div>
-    </div>
   </section>
 
  
 </main>
 
 <footer class="footer">
-  <div class="logbook" id="logbookBtn" role="button" tabindex="0" aria-pressed="false">
-    <div class="logbook__content">
-      <div>
-        <p class="logbook__title">Logbook</p>
-        <ul class="logbook__list">
-          <li>✓ 13 years in the field</li>
-          <li>✓ 5 professional worlds explored</li>
-          <li>✓ An events management degree</li>
-          <li>✓ Mobility &amp; English confirmed</li>
-          <li>✓ Curiosity &amp; enthusiasm as driving forces</li>
-        </ul>
-        <p class="logbook__destination">📍 Next destination: Pencran?</p>
-      </div>
-    </div>
-    <p class="logbook__reveal" id="logbookReveal" aria-live="polite">Ready to come aboard with AFS!</p>
-  </div>
+ 
+<div class="order-btn" id="orderBtn" role="button" tabindex="0" aria-pressed="false">
+<span id="orderBtnText">Ready to come aboard<br>with Mathilde?</span>
+</div>
 </footer>
 
 <script src="../script.js"></script>
